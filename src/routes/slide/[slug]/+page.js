@@ -13,6 +13,6 @@ export async function load({ params }) {
 			}
 		};
 	} catch (e) {
-		throw error(404, e);
+		error(404);
 	}
 }
