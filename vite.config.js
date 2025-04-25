@@ -2,12 +2,12 @@ import { defineConfig } from 'vite';
 import { sveltekit } from '@sveltejs/kit/vite';
 import svg from '@poppanator/sveltekit-svg';
 import FaviconManifest from 'vite-favicon-manifest';
-import DataPlugin from 'sveltekit-data-plugin';
+// import DataPlugin from 'sveltekit-data-plugin';
 import { enhancedImages } from '@sveltejs/enhanced-img';
 
 export default defineConfig({
 	plugins: [
-		DataPlugin(enhancedImages()),
+		enhancedImages(),
 
 		sveltekit(),
 
